@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>Functions in JavaScript</title>
+    </head>
+<body>
+    <p>Examples of Functions in JavaScript</p>
+    <br>
+
+    <script>
+
+        /*First Example*/
+        /*<p id = "demo"></p>
+        function sum(a,b){
+            return a+b;
+        }
+        document.getElementById("demo").innerHTML = sum(10,20);*/
+
+        
+        /*Second Example*/
+        /*(function() {
+            alert('I just called myself');
+        })();*/
+        
+        
+        /*Third Example*/
+        var sum = new Function("a","b","return a+b");
+        console.log("Sum is ",sum(10,5));
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Scope_Examples</title>
+    </head>
+
+    <body>
+        <p>Examples of Scope in JavaScript.There are three types of scopes:</p><br>
+        <p> Global Scope,Local Scope,Block Scope</p>
+        <br>
+        
+        <script>
+            /*First Example of Local Scope*/
+            /*var x = "Cookie";
+            function dessert(){
+                var x = "doughnut";
+                console.log(x);
+                
+            }
+            dessert();*/
+            
+            
+            /*Second Example of Block Scope*/
+            var x = "cookie";
+            function dessert(){
+                if(true){
+                    let x = "doughnut";
+                    console.log(x);
+                }
+                console.log(x);
+            }
+            dessert();
+
+        </script>
+    </body>
